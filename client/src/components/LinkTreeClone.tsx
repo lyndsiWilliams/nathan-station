@@ -1,4 +1,5 @@
 import { Button } from 'reactstrap';
+import { Card, Avatar } from 'antd';
 /** @jsxImportSource @emotion/react */
 import { css } from '@emotion/react'
 import styled from '@emotion/styled'
@@ -7,6 +8,8 @@ import youtube from '../images/youtube.png';
 import bandcamp from '../images/bandcamp.png';
 import itunes from '../images/itunes.jpg';
 import spotify from '../images/spotify.png';
+
+const { Meta } = Card;
 
 const StyledImage = styled.img`
   width: 15%;
@@ -58,6 +61,20 @@ const LinkListClone = () => {
       <StyledImage src={dad} alt='dad'/>
       <h1>@dadfeels</h1>
       <StyledButtonGroup>
+        <StyledLink
+          href="http://bit.ly/2GVKh3N"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <Card
+            style={{ width: 600, borderRadius: '50px' }}
+          >
+            <Meta
+            avatar={<Avatar size='small' src={youtube} />}
+            title='Youtube'
+            />
+          </Card>
+        </StyledLink>
         <StyledLink
           href="http://bit.ly/2GVKh3N"
           target="_blank"
