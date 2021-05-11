@@ -1,8 +1,14 @@
+// Package imports
 import React from 'react';
 import ReactDOM from 'react-dom';
+// Styling
 import './index.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+// Component
 import App from './App';
+// Other
 import reportWebVitals from './reportWebVitals';
+
 
 ReactDOM.render(
   <React.StrictMode>

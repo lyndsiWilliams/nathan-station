@@ -2,8 +2,8 @@
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 // Components
 import LandingPage from './components/LandingPage';
-import Home from './components/Home';
-import OtherHome from './components/OtherHome';
+import LinkListClone from './components/LinkListClone';
+import PersonalDesign from './components/PersonalDesign';
 // Styling
 import './App.css';
 
@@ -12,9 +12,9 @@ function App() {
     <div className="App">
       <Router>
         <Switch>
-          <Route exact path="/" component={LandingPage} />
-          <Route path="/home-1" component={Home} />
-          <Route path="/home-2" component={OtherHome} />
+          <Route exact path="/" component={LinkListClone} />
+          <Route path="/home-1" component={LandingPage} />
+          <Route path="/home-2" component={PersonalDesign} />
         </Switch>
       </Router>
     </div>
