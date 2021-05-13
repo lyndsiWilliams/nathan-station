@@ -1,9 +1,9 @@
 // React
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 // Components
-import LandingPage from './components/LandingPage';
-import LinkTreeClone from './components/LinkTreeClone';
-import PersonalDesign from './components/PersonalDesign';
+import NathanStation from './components/NathanStation';
+import DadPage from './components/DadPage';
+import KeithPage from './components/KeithPage';
 // Styling
 import './App.css';
 
@@ -12,9 +12,9 @@ function App() {
     <div className="App">
       <Router>
         <Switch>
-          <Route exact path="/" component={LinkTreeClone} />
-          <Route path="/home-1" component={LandingPage} />
-          <Route path="/home-2" component={PersonalDesign} />
+          <Route exact path="/" component={NathanStation} />
+          <Route path="/dad" component={DadPage} />
+          <Route path="/keith" component={KeithPage} />
         </Switch>
       </Router>
     </div>
