@@ -15,6 +15,7 @@ const StyledCard = styled(Card)`
   .ant-card-meta-title {
     color: midnightblue;
     font-size: 1.8em;
+    margin-right: 50px;
   }
 
   .ant-card-body {
@@ -95,6 +96,18 @@ const LinkListClone = () => {
             <Meta
             avatar={<Avatar size='large' src={youtube} />}
             title='Youtube'
+          />
+          </StyledCard>
+        </StyledLink>
+        <StyledLink
+          href="http://bit.ly/30j2SMs"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <StyledCard style={cardStyle}>
+            <Meta
+            avatar={<Avatar size='large' src={dad} />}
+            title='Merchandise'
           />
           </StyledCard>
         </StyledLink>
