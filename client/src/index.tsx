@@ -3,7 +3,6 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 // Styling
 import './index.css';
-import 'bootstrap/dist/css/bootstrap.min.css';  // reactstrap
 // Component
 import App from './App';
 // Other
