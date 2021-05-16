@@ -9,6 +9,10 @@ import spotify from '../images/spotify.png';
 const { Meta } = Card;
 
 const StyledCard = styled(Card)`
+  width: 100%;
+  border-radius: 50px;
+  background-color: cornflowerblue;
+  color: midnightblue;
   margin-bottom: 4%;
 
   .ant-card-meta-title {
@@ -28,17 +32,16 @@ const StyledCard = styled(Card)`
         color: darkslateblue;
       }
     }
-  }
 `;
 
 const StyledImage = styled.img`
-  width: 15%;
+  width: 135px;
   margin: 2% 0;
   border-radius: 300px;
 `;
 
 const StyledLink = styled.a`
-  width: 600px;
+  width: 100%;
   text-decoration: none;
   color: midnightblue;
 
@@ -51,28 +54,38 @@ const StyledButtonGroup = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-`;
+  width: 600px;
 
-const cardStyle = {
-  width: 600,
-  borderRadius: '50px',
-  backgroundColor: 'cornflowerblue',
-  color: 'midnightblue',
-};
+  @media (max-width: 650px) {
+    width: 550px;
+  }
+
+  @media (max-width: 550px) {
+    width: 450px;
+  }
+
+  @media (max-width: 450px) {
+    width: 350px;
+  }
+
+  @media (max-width: 350px) {
+    width: 250px;
+  }
+`;
 
 const DadPage = () => {
   return (
     <>
       <BackTop />
-      <StyledImage src={dad} alt='dad'/>
-      <h1>@dadfeels</h1>
       <StyledButtonGroup>
+        <StyledImage src={dad} alt='dad'/>
+        <h1>@dadfeels</h1>
         <StyledLink
           href="http://bit.ly/2GVKh3N"
           target="_blank"
           rel="noreferrer"
         >
-          <StyledCard style={cardStyle}>
+          <StyledCard>
             <Meta
             avatar={<Avatar size='large' src={youtube} />}
             title='Youtube'
@@ -84,7 +97,7 @@ const DadPage = () => {
           target="_blank"
           rel="noreferrer"
         >
-          <StyledCard style={cardStyle}>
+          <StyledCard>
             <Meta
             avatar={<Avatar size='large' src={dad} />}
             title='Merchandise'
@@ -96,7 +109,7 @@ const DadPage = () => {
           target="_blank"
           rel="noreferrer"
         >
-          <StyledCard style={cardStyle}>
+          <StyledCard>
             <Meta
             avatar={<Avatar size='large' src={bandcamp} />}
             title='Bandcamp'
@@ -108,7 +121,7 @@ const DadPage = () => {
           target="_blank"
           rel="noreferrer"
         >
-          <StyledCard style={cardStyle}>
+          <StyledCard>
             <Meta
             avatar={<Avatar size='large' src={spotify} />}
             title='Spotify'
@@ -120,7 +133,7 @@ const DadPage = () => {
           target="_blank"
           rel="noreferrer"
         >
-          <StyledCard style={cardStyle}>
+          <StyledCard>
             <Meta
             avatar={<Avatar size='large' src={itunes} />}
             title='iTunes'
