@@ -1,6 +1,8 @@
+import { useState } from 'react';
 import { Card, Avatar, BackTop } from 'antd';
 import styled from '@emotion/styled';
 import dad from '../images/dad.jpg';
+import server from '../images/server.png';
 import youtube from '../images/youtube.png';
 import bandcamp from '../images/bandcamp.png';
 import itunes from '../images/itunes.jpg';
@@ -74,6 +76,38 @@ const StyledButtonGroup = styled.div`
 `;
 
 const DadPage = () => {
+  const [glitchText, setGlitchText] = useState<string>('YouTube');
+
+  const triggerGlitchText = (text: string) => {
+    if (text === 'YouTube') {
+      setGlitchText('SERVER');
+        setTimeout(() => {
+          setGlitchText('YouTube');
+          setTimeout(() => {
+            setGlitchText('YouTube')
+          }, 200);
+        }, 300);
+    }
+  }
+
+  const dadCard = (
+    <StyledCard onMouseOver={() => triggerGlitchText(glitchText)}>
+      <Meta
+        avatar={<Avatar size='large' src={youtube} />}
+        title={glitchText}
+      />
+    </StyledCard>
+  );
+  
+  const serverCard = (
+    <StyledCard style={{ backgroundColor: 'firebrick' }}>
+      <Meta
+        avatar={<Avatar size='large' src={server} />}
+        title={glitchText}
+      />
+    </StyledCard>
+  );
+
   return (
     <>
       <BackTop />
@@ -85,12 +119,7 @@ const DadPage = () => {
           target="_blank"
           rel="noreferrer"
         >
-          <StyledCard>
-            <Meta
-            avatar={<Avatar size='large' src={youtube} />}
-            title='Youtube'
-          />
-          </StyledCard>
+          {glitchText === 'YouTube' ? dadCard : serverCard}
         </StyledLink>
         <StyledLink
           href="http://bit.ly/30j2SMs"
