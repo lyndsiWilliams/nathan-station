@@ -29,7 +29,7 @@ const LandingPage = () => {
   return (
     <>
       <BackTop />
-      <h1 css={{...textMargin}}>Hi Nathan! I made a couple of concept pages, click each button to see examples</h1>
+      <h1 css={{...textMargin}}>Hi Nathan! I made a couple of concept pages, use the menu above or the buttons below to see examples</h1>
       <StyledButton><Link to='/dad'>Linklist clone</Link></StyledButton>
       <StyledButton><Link to='/keith'>My own design</Link></StyledButton>
       <StyledImg src={noBonesDance} alt="Nathan Barnatt doing the No Bones Dance" />
