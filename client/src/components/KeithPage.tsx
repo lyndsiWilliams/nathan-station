@@ -87,7 +87,7 @@ const KeithPage = () => {
             />
             <StyledCard>
               <Meta
-                avatar={<Avatar src={twitch} />}
+                avatar={<Avatar src={twitch} size='large' />}
                 title="Twitch"
                 description="Minecraft OP overlord and CEO of Sega."
               />
@@ -107,7 +107,7 @@ const KeithPage = () => {
             />
             <StyledCard>
               <Meta
-                avatar={<Avatar src={twitter} />}
+                avatar={<Avatar src={twitter} size='large' />}
                 title="Twitter"
                 description="Good at shadow boxing but if I do it too long I'll defeat the air & everyone will suffocate. CEO of SEGA. Not the best Minecrafter but the COOLEST Minecrafter!"
               />
@@ -127,7 +127,7 @@ const KeithPage = () => {
             />
             <StyledCard>
               <Meta
-                avatar={<Avatar src={youtube} />}
+                avatar={<Avatar src={youtube} size='large' />}
                 title="YouTube"
                 description="Major gamor Keith Apicary plays Minecraft!"
               />
@@ -147,7 +147,7 @@ const KeithPage = () => {
             />
             <StyledCard>
               <Meta
-                avatar={<Avatar src={instagram} />}
+                avatar={<Avatar src={instagram} size='large' />}
                 title="Instagram"
                 description="Say Gah"
               />
