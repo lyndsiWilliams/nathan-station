@@ -1,5 +1,3 @@
-/** @jsxImportSource @emotion/react */
-import { css } from '@emotion/react'
 import styled from '@emotion/styled';
 import { Card, Avatar } from 'antd';
 import keithBanner from '../images/keithBanner.jpeg';
@@ -40,14 +38,6 @@ const StyledCardGroup = styled.div`
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-`;
-
-const toTheRight = css`
-  margin-left: 20%;
-`;
-
-const toTheLeft = css`
-  margin-right: 20%;
 `;
 
 const StyledCard = styled(Card)`
