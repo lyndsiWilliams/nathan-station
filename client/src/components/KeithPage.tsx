@@ -96,7 +96,7 @@ const KeithPage = () => {
         </StyledLink>
         {/* ----------- Twitter ----------- */}
         <StyledLink
-            href="https://www.instagram.com/KeithApicary/"
+            href="https://twitter.com/KeithApicary"
             target="_blank"
             rel="noreferrer"
         >
