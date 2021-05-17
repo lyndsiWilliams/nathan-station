@@ -1,6 +1,7 @@
 // React
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 // Components
+import NavBar from './components/NavBar';
 import NathanStation from './components/NathanStation';
 import DadPage from './components/DadPage';
 import KeithPage from './components/KeithPage';
@@ -11,6 +12,7 @@ function App() {
   return (
     <div className="App">
       <Router>
+        <NavBar />
         <Switch>
           <Route exact path="/" component={NathanStation} />
           <Route path="/dad" component={DadPage} />
